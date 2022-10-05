@@ -1,134 +1,51 @@
-# rouille
+# Ржавый
 
-![](https://github.com/bnjbvr/rouille/raw/principale/logo.jpeg)
+![](https://github.com/Sanceilaks/rzhavchina/raw/principale/logo.png)
 
-Aren't you _le tired_ from writing Rust programs in English? Do you like saying
-"merde" a lot? Would you like to try something different, in an exotic and
-funny-sounding language? Would you want to bring some French touch to your
-programs?
+Ну че, пацыки, вам доводилось когда то писать на расте? Небогоугодное дело это конечно, поэтому мы ради вас, братья, взяли грех на душу и исправили его, теперь можете использовать **Ржавый** и не беспокоиться о каре божьей! Да прибудет с вами йопта, АУЕ!
 
-**rouille** (French for _Rust_) is here to save your day, as it allows you to
-write Rust programs in French, using French keywords, French function names,
-French idioms.
+**Ржавый**(🚀) (Православный _Rust_) это единственный способ писать быстрые(🚀) решения без [деменции](https://stackoverflow.com/questions/36136201/how-does-rust-guarantee-memory-safety-and-prevent-segfaults)(🚀)
 
-This has been designed to be used as the official programming language to
-develop the future French sovereign operating system. 
+**Ржавый**(🚀) - прогрессивный отросток языка _Rust_(🚀), для православных славян
 
-If you're from the French or any other governement with French as an official 
-language: I will be awaiting your donations on
-[liberapay](https://liberapay.com/bnjbvr/).
+Лови пример, пацанчик
 
-You're from Quebec (or elsewhere) and don't feel at ease using only French words? 
-
-Don't worry!
-French Rust is fully compatible with English-Rust, so you can mix both at your
-convenience.
-
-Here's an example of what can be achieved with Rouille:
-
-### trait and impl (aka convention et réalisation)
+### trait and impl (aka черта et внутренность)
 
 ```rust
-rouille::rouille! {
-    utilisons std::collections::Dictionnaire comme Dico;
+rzhavchina::rzhavchina! {
+    поматросить std::collections::КартаИзХэшей типо Dico;
 
-    convention CléValeur {
-        fonction écrire(&soi, clé: Chaine, valeur: Chaine);
-        fonction lire(&soi, clé: Chaine) -> PeutÊtre<&Chaine>;
+    черта СписокНаОтжим {
+        пацикисделают написать(&я, ключ: Chaine, значение: Chaine);
+        пацикисделают читать(&я, ключ: Chaine) -> Подстройка<&Chaine>;
     }
 
-    statique mutable DICTIONNAIRE: PeutÊtre<Dico<Chaine, Chaine>> = Rien;
+    попонятиям мутант СЛАВАРЬ: Подстройка<Dico<Chaine, Chaine>> = Нихуя;
 
-    structure Concrète;
+    типок СписокНаОтжим;
 
-    réalisation CléValeur pour Concrète {
-        fonction écrire(&soi, clé: Chaine, valeur: Chaine) {
-            soit dico = dangereux {
-                DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
+    внутренность ГотовыйСписокНаОтжим pour СписокНаОтжим {
+        пацикисделают написать(&я, ключ: Chaine, значение: Chaine) {
+            ебаный списокебаный = вичположительный {
+                СЛАВАРЬ.получить_или_вставить_пизды(Обычный::наотъебись)
             };
-            dico.insérer(clé, valeur);
+            списокебаный.вставить(ключ, значение);
         }
-        fonction lire(&soi, clé: Chaine) -> Résultat<PeutÊtre<&Chaine>, Chaine> {
-            si soit Quelque(dico) = dangereux { DICTIONNAIRE.en_réf() } {
-                Bien(dico.lire(&clé))
-            } sinon {
-                Arf("fetchez le dico".vers())
+        пацикисделают читать(&я, ключ: Chaine) -> Итог<Подстройка<&Chaine>, Chaine> {
+            допустим ебаный Чето(списокебаный) = вичположительный { СЛАВАРЬ.кинутьстрелку() } {
+                Норм(списокебаный.взять(&ключ))
+            } напиздел {
+                Ошбк("fetchez le списокебаный".вжопу())
             }
         }
     }
 }
 ```
 
-### Support for regional languages
+## Норм поцыки
 
-```rust
-#[légal(code_inaccessible)]
-fonction secondaire() {
-    merde!("oh non"); // for the true French experience
-    calisse!("tabarnak"); // for friends speaking fr-ca
-    oups!("fetchez la vache"); // in SFW contexts
-}
-```
+- [@ArtemKing](https://github.com/artemking4) за помощь с базаром и фотокарточкой
+- [@Elderly](https://github.com/Eld3rly) за помощь с базаром
+- [@Слаппи](https://github.com/slpkbt) просто норм)))))
 
-### Other examples
-
-See the [examples](./examples/src/main.rs) to get a rough sense of the whole
-syntax. Voilà, that's it.
-
-## les contributions
-
-First of all, _merci beaucoup_ for considering participating to this joke, the
-French government will thank you later! Feel free to throw in a few identifiers
-here and there, and open a pull-request against the `principale` (French for
-`main`) branch.
-
-Please don't introduce swear words, though: we will not excuse your French.
-
-## but why would you do zat
-
-- horsin around
-- playing with raw proc macros
-- making a bit of fun about programming languages that do this seriously,
-  though I can see their utility.
-- winking at [Marcel](https://github.com/brouberol/marcel)
-- c'est chic
-
-## Other languages
-
-- Dutch: [roest](https://github.com/jeroenhd/roest)
-- German: [rost](https://github.com/michidk/rost)
-- Polish: [rdza](https://github.com/phaux/rdza)
-- Italian: [ruggine](https://github.com/DamianX/ruggine)
-- Russian: [ржавчина](https://github.com/FluxIndustries/rzhavchina)
-- Esperanto: [rustteksto](https://github.com/dscottboggs/rustteksto)
-- Hindi: [zung](https://github.com/rishit-khandelwal/zung)
-- Hungarian: [rozsda](https://github.com/jozsefsallai/rozsda)
-- Chinese: [xiu (锈)](https://github.com/lucifer1004/xiu)
-- Spanish: [rustico](https://github.com/UltiRequiem/rustico)
-- Korean: [Nok (녹)](https://github.com/Alfex4936/nok)
-- Finnish: [ruoste](https://github.com/vkoskiv/ruoste)
-- Arabic: [sada](https://github.com/LAYGATOR/sada)
-- Turkish: [pas](https://github.com/ekimb/pas)
-- Vietnamese: [gỉ](https://github.com/Huy-Ngo/gir)
-- Japanese: [sabi (錆)](https://github.com/yuk1ty/sabi)
-- Danish: [rust?](https://github.com/LunaTheFoxgirl/rust-dk)
-- Marathi: [gan̄ja](https://github.com/pranavgade20/ganja)
-- Romanian: [rugină](https://github.com/aionescu/rugina)
-- Czech: [rez](https://github.com/radekvit/rez)
-- Ukrainian: [irzha](https://github.com/brokeyourbike/irzha)
-- Bulgarian: [ryzhda](https://github.com/gavadinov/ryzhda)
-- Slovak: [hrdza](https://github.com/TheMessik/hrdza)
-- Catalan: [rovell](https://github.com/gborobio73/rovell)
-- Corsican: [rughjina](https://github.com/aldebaranzbradaradjan/rughjina)
-- Indonesian: [karat](https://github.com/annurdien/karat)
-- Lithuanian: [rūdys](https://github.com/TruncatedDinosour/rudys)
-
-## un grand merci
-
-- [@VentGrey](https://twitter.com/VentGrey) for making a logo!
-
-## la license
-
-[License Publique Rien à Branler](http://sam.zoy.org/lprab/),
-_le_ official translation of the [WTFPL](http://www.wtfpl.net/)
-by the same author.

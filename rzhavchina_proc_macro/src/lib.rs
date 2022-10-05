@@ -72,6 +72,7 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
         "банда" => "vec",
         "запихнуть" => "push",
         "застрочить" => "to_string",
+        "получить_или_вставить_пизды" => "get_or_insert_with",
 
         _ => &ident_str,
     };
