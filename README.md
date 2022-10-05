@@ -46,4 +46,4 @@ rzhavchina::rzhavchina! {
 ## Норм поцыки
 
 - [@ArtemKing](https://github.com/artemking4) за помощь с базаром и фотокарточкой
-
+- [@Elderly](https://github.com/Eld3rly) за помощь с базаром
