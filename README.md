@@ -10,7 +10,7 @@
 
 Лови пример, пацанчик
 
-### trait and impl (aka черта et внутренность)
+### trait and impl (какбы черта и внутренность)
 
 ```rust
 rzhavchina::rzhavchina! {
